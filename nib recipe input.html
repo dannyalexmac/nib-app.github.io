@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>nib recipebox</title>
+<link rel="stylesheet" type="text/css" href="nib.css">
+
+
+<meta charset="utf-8">
+  <title>accordion demo</title>
+  <link rel="stylesheet" href="nib.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+</head>
+
+
+<body>
+
+<!-- HEADER-->
+<div id="logo" class="menu">
+
+<a id= "logo" href="nib homepage.html">
+<img src="images/nib header.jpg"/>
+</a>
+
+</div>
+
+
+
+<div class="menu">
+<table width="100%" border="0">
+  <tr>
+    <th width="24" scope="col">&nbsp;</th>
+    <th width="24" scope="col">&nbsp;</th>
+    <th width="24" scope="col"><a href="nib recipe input.html">recipebox</a></th>
+    <th width="24" scope="col"><p><a href="#">calendar</a></p></th>
+    <th width="24" scope="col"><a href="nib login.html">login</a></th>
+    <th width="26" scope="col">&nbsp;</th>
+    <th width="26" scope="col">&nbsp;</th>
+  </tr>
+</table>
+</div>
+<!-- HEADER-->
+
+
+
+<!--left menu bar-->
+
+
+<div id="accordion" class="accordian">
+  <h3>breakfast</h3>
+  <div>
+    <ul>
+      <li>french toast muffins</li>
+      <li>poached eggs</li>
+      <li>maple walnut oatmeal</li>
+    </ul>
+  </div>
+  <h3>lunch</h3>
+  <div>
+    <ul>
+      <li>caesar chicken</li>
+      <li>cranberry spinach salad</li>
+      <li>tempeh burgers</li>
+    </ul>
+  </div>
+  <h3>snack</h3>
+  <div>
+    <ul>
+      <li>roasted soynuts</li>
+      <li>homemade hummus</li>
+      <li>tomato and avocado salsa</li>
+    </ul>
+  </div>
+    <h3>dinner</h3>
+  <div>
+    <ul>
+      <li>salmon risotto</li>
+      <li>lamb vindaloo</li>
+      <li>pumpkin + sage stew</li>
+    </ul>
+  </div>
+</div>
+ 
+<script>
+
+$( "#accordion" ).accordion();
+
+
+</script>
+
+<!--left menu bar-->
+
+
+
+
+
+<!-- input -->
+<div id="recipeinput" class="main">
+<form if= "myForm" name="myForm" action="submission.html" method="post" onsubmit="return !!(check_info() & passwordmatch());">
+ <fieldset>
+    <legend>ADD A RECIPE</legend>
+
+      title: <input id="title" type="text" name="title" minlength="2" required><br><br>
+
+      ingredients: <input id="ingredients" type="ingredients" minlength="9"><br><br>
+
+		directions: <input id="directions" type="directions" minlength="9"><br><br>
+
+		<form id="form" class="main" required>
+      type: <br>
+        <input id="breakfast" name="breakfast" type="radio" value="breakfast">breakfast<br>
+        <input id="lunch" name="lunch" type="radio" value="lunch">lunch<br>
+        <input id="snack" name="snack" type="radio" value="snack">snack<br>
+        <input id="dinner" name="dinner" type="radio" value="dinner">dinner<br>
+      <br>
+      </form>
+
+      <form action="demo_form.asp">
+ 		 <input type="file" name="pic" accept="image/*">
+		</form>
+<br><br>
+
+      <input type="submit" value="Submit">
+      <button type="reset" value="Reset">Reset</button>
+
+ </fieldset>
+</form>
+</div>  
+<!-- input -->
+
+
+
+
+
+<!-- footer -->
+<div id="footer" class="footer">
+<footer>
+  <ul>
+
+
+    <li>&#169; 2015 nib app. all rights reserved. design by river</li>
+
+  </ul>
+
+</footer>  
+</div>
+<!-- footer -->
+
+
+
+</body>
+</html>

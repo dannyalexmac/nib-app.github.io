@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>api testing</title>
+
+</head>
+<body>
+<h2>yummly api testing</h2>
+
+<form id="asdf" method="post">
+    <input type="submit" id="search" value="search" />
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<script type="application/javascript">
+
+    $('#asdf').on( 'submit', function ( event ) {
+        event.preventDefault( ) ;
+        console.log ('submitted the form') ;
+
+        var app_id = 'f749ef13' ;
+        var app_key = '335b49f8e3bcc368300d71912bb2fd1e' ;
+
+        var base_url = 'http://api.yummly.com/v1/api/recipe/' ;
+
+        var recipe_id = 'French-Onion-Soup-The-Pioneer-Woman-Cooks-_-Ree-Drummond-41364' ;
+
+//        var url = base_url + recipe_id + "?" + "_app_id=" + app_id + "&" + "_app_key=" + app_key ;
+
+        $.getJSON ( base_url + recipe_id, {
+            _app_id: app_id,
+            _app_key: app_key
+        }, function ( response ) {
+            console.log ( response ) ;
+
+            console.log( 'response.numberOfServings: ' + response.numberOfServings ) ;
+        }) ;
+
+    }) ;
+
+</script>
+</body>
+</html>

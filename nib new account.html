@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>nib login</title>
+<link rel="stylesheet" type="text/css" href="nib.css">
+</head>
+
+
+<body>
+
+
+<!-- HEADER-->
+<div id="logo" class="menu">
+
+<a id= "logo" href="nib homepage.html">
+<img src="images/nib header.jpg"/>
+</a>
+
+</div>
+
+
+
+<div class="menu">
+<table width="100%" border="0">
+  <tr>
+    <th width="24" scope="col">&nbsp;</th>
+    <th width="24" scope="col">&nbsp;</th>
+    <th width="24" scope="col"><a href="nib recipe input.html">recipebox</a></th>
+    <th width="24" scope="col"><p><a href="#">calendar</a></p></th>
+    <th width="24" scope="col"><a href="nib login.html">login</a></th>
+    <th width="26" scope="col">&nbsp;</th>
+    <th width="26" scope="col">&nbsp;</th>
+  </tr>
+</table>
+</div>
+<!-- HEADER-->
+
+
+
+
+
+
+
+
+<div id="form" class="main">
+<form if= "myForm" name="myForm" action="submission.html" method="post" onsubmit="return !!(check_info() & passwordmatch());">
+ <fieldset>
+    <legend>MAKE AN ACCOUNT</legend>
+
+      First Name: <input id="firstname" type="text" minlength="2" required><br><br>
+
+      Last Name: <input id="lastname" type="text" minlength="2" required><br><br>
+
+      Email Address: <input id="emailaddress" type="email" required><br><br>
+
+      Username: <input id="username" type="text" name="username" minlength="8" required><br><br>
+
+      Password: <input id="password" type="password" minlength="9" required="number"><br><br>
+
+      Verify Password: <input id="verifypassword" type="password" minlength="9" required="number"><br><br>
+
+      <form id="form" class="main" required>
+      Favorite Color: <br>
+        <input id="favoritecolor" name="favoritecolor" type="radio" value="blue">Blue<br>
+        <input id="favoritecolor" name="favoritecolor" type="radio" value="green">Green<br>
+        <input id="favoritecolor" name="favoritecolor" type="radio" value="black">Black<br>
+        <input id="favoritecolor" name="favoritecolor" type="radio" value="white">White<br>
+      <br>
+      </form>
+
+      <input type="submit" value="Submit">
+      <button type="reset" value="Reset">Reset</button>
+
+ </fieldset>
+</form>
+</div>  
+
+<!-- footer -->
+<div id="footer" class="footer">
+<footer>
+  <ul>
+
+
+    <li>&#169; 2015 nib app. all rights reserved. design by river</li>
+
+  </ul>
+
+</footer>  
+</div>
+<!-- footer -->
+
+
+</body>
+</html>
